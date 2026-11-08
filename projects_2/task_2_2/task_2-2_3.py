@@ -1,0 +1,11 @@
+device_name = input("Название прибора: ")
+inventory_number = input("Инвентарный номер: ")
+condition = input("Состояние: ")
+amount = input("Количество: ")
+
+print("-"*30)
+print(f"Название прибора:\t{device_name}")
+print(f"Инвентарный номер:\t{inventory_number}")
+print(f"Состояние:\t\t{condition}")
+print(f"Количество:\t\t{amount}")
+print("-"*30)

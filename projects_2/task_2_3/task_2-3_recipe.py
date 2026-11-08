@@ -1,0 +1,11 @@
+substrat = input("Введите название питательной среды: ")
+agar_concentration = input("Введите концентрацию агара (%): ")
+sterilization_temp = input("Введите температуру стерилизации (°C): ")
+big_substrat = substrat.upper()
+
+with open("recipe.txt", "w", encoding="utf-8") as file:
+    file.write(f"\t{big_substrat}\n\n")
+    file.write(f"Концентрация агара: {agar_concentration}%\n")
+    file.write(f"Температура стерилизации: {sterilization_temp} °C\n")
+
+print("Файл 'recipe.txt' успешно сформирован!")
